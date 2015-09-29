@@ -71,14 +71,29 @@ public class StupidMorningActivity extends AppCompatActivity {
 
     }
 
+    private void changeVisibility()
+    {
+        if(basicText.getVisibility() == View.VISIBLE)
+        {
+            basicText.setVisibility(View.GONE);
+        }
+        else
+        {
+            basicText.setVisibility(View.VISIBLE);
+        }
+
+        basicText.setVisibility(View.GONE);
+    }
+
     private void setupListeners()
     {
         colorChangeButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View buttonView)
             {
-                //This is where the magic happens
+                //This is where the "magic" happens
                 changeBackgroundColor();
+                changeVisibility();
             }
         });
     }

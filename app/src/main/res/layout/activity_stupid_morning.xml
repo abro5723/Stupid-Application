@@ -16,8 +16,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/eatingText"
+        android:text="Eating"
+        android:id="@+id/basicText"
         android:layout_below="@+id/eatingView"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:text="New Button"
         android:id="@+id/eatingButton"
-        android:layout_below="@+id/eatingText"
+        android:layout_below="@+id/basicText"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
 
